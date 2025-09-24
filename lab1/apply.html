@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Заявка — Send Him to Dagestan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Форма заявки на участие в программах.">
+    <meta name="keywords" content="заявка, форма, участие">
+</head>
+<body>
+<header>
+    <h1><a href="index.html#menu">Send Him to Dagestan</a></h1>
+    <nav aria-label="Основная навигация">
+        <p>
+            <a href="programs.html">Программы</a> ·
+            <a href="how-it-works.html">Как это работает</a> ·
+            <a href="apply.html">Заявка</a> ·
+            <a href="about.html">О нас</a> ·
+            <a href="contacts.html">Контакты</a>
+        </p>
+    </nav>
+</header>
+
+<main>
+    <section id="apply" aria-labelledby="apply-title">
+        <h2 id="apply-title">Подать заявку</h2>
+
+        <form>
+            <fieldset>
+                <legend>Контактные данные</legend>
+                <label>Имя: <input name="name" required></label><br>
+                <label>Телефон: <input name="phone" type="tel" required></label><br>
+                <label>Email: <input name="email" type="email"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Выбор направления</legend>
+                <label><input type="radio" name="track" value="trekking"> Горный треккинг</label><br>
+                <label><input type="radio" name="track" value="wrestling"> Борьба и ОФП</label><br>
+                <label><input type="radio" name="track" value="media"> Медиашкола</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Дополнительно</legend>
+                <label>Комментарий:<br>
+                    <textarea name="comment" rows="4" cols="60" placeholder="Опыт, пожелания, вопросы"></textarea>
+                </label>
+            </fieldset>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Send Him to Dagestan.</p>
+</footer>
+</body>
+</html>
