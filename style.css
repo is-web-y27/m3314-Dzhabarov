@@ -482,6 +482,39 @@ a:hover {
     transition: background-color 0.2s ease;
 }
 
+.nav__link--active {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav__link {
+    transition: all 0.3s ease-in-out !important;
+}
+
+.nav__link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer__load-time {
+    font-size: 0.8rem !important;
+    color: #888 !important;
+    margin-top: 0.5rem !important;
+    font-family: 'Courier New', monospace;
+}
+
+a, button, input, .gallery-item, .nav__link {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav__link:active {
+    transform: translateY(0) !important;
+    transition-duration: 0.1s !important;
+}
+
 
 @media (max-width: 480px) {
     body {
