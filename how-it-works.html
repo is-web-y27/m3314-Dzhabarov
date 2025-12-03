@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Как это работает — Send Him to Dagestan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Процесс набора: заявка, собеседование, меддопуск, распределение.">
+    <meta name="keywords" content="этапы, отбор, собеседование, меддопуск">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <h1 class="header__title"><a href="index.html">Send Him to Dagestan</a></h1>
+    <p class="header__description"><strong>Спортивно-туристические «лагеря закалки»</strong> на Кавказе — горы, борьба, команда и характер.
+        Всё <em class="em">добровольно</em>, по согласию родителей и с приоритетом безопасности.</p>
+
+    <nav class="nav" aria-label="Основная навигация">
+        <div class="nav__links">
+            <a class="nav__link" href="programs.html">Программы</a>
+            <a class="nav__link" href="how-it-works.html">Как это работает</a>
+            <a class="nav__link" href="apply.html">Заявка</a>
+            <a class="nav__link" href="about.html">О нас</a>
+            <a class="nav__link" href="contacts.html">Контакты</a>
+            <a class="nav__link" href="feedback.html">Отзывы</a>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="section" id="how-it-works" aria-labelledby="how-title">
+        <h2 id="how-title">Как это работает</h2>
+        <p>Коротко: заполняете заявку → собеседование с наставником → медицинский допуск → распределение в группу.</p>
+
+
+            <p class="image-caption">Поэтапный процесс отбора обеспечивает безопасность и качество программ</p>
+
+        <article class="article">
+            <h3>Этапы набора</h3>
+            <ul class="list list--unordered">
+                <li class="list__item"><strong class="strong">Этап 1.</strong> Онлайн-заявка</li>
+                <li class="list__item"><strong class="strong">Этап 2.</strong> Собеседование с наставником</li>
+                <li class="list__item"><strong class="strong">Этап 3.</strong> Медицинский допуск</li>
+                <li class="list__item"><strong class="strong">Этап 4.</strong> Распределение в группу и подтверждение</li>
+            </ul>
+        </article>
+
+        <article class="article">
+            <h3>Сниппет кода</h3>
+            <pre class="pre"><code class="code">// Псевдо-обработчик заявки (Go)
+type Application struct {
+    Name  string
+    Age   int
+    Phone string
+    Track string // "trekking" | "wrestling" | "media"
+}
+
+func Validate(a Application) error {
+    if a.Age &lt; 13 || a.Age &gt; 17 { return fmt.Errorf("доступно 13–17 лет") }
+    if a.Name == "" { return fmt.Errorf("нужно имя") }
+    return nil
+}</code></pre>
+        </article>
+
+        <blockquote class="blockquote">
+            «Слабость уходит там, где есть дисциплина и команда. Горы честно показывают, кто ты есть».
+            <cite class="cite"> — наставник Магомед, с. Гимры</cite>
+        </blockquote>
+    </section>
+</main>
+
+<footer class="footer">
+    <p class="footer__text">&copy; 2025 Send Him to Dagestan.</p>
+</footer>
+</body>
+</html>
