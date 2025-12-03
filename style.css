@@ -516,6 +516,107 @@ a, button, input, .gallery-item, .nav__link {
 }
 
 
+.feedback-item {
+    background-color: var(--light-color);
+    border-left: 4px solid var(--secondary-color);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.feedback-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.feedback-name {
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+    margin: 0;
+}
+
+.feedback-program {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.feedback-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rating-stars {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.rating-value {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+.feedback-comment {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: var(--border-radius);
+}
+
+.feedback-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #ddd;
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+.feedback-email {
+    font-style: italic;
+}
+
+.button--small {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .feedback-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .feedback-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .feedback-rating {
+        align-self: flex-start;
+    }
+}
+
+
 @media (max-width: 480px) {
     body {
         font-size: 14px;
