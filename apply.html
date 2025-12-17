@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Заявка — Send Him to Dagestan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Форма заявки на участие в программах.">
+    <meta name="keywords" content="заявка, форма, участие">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <h1 class="header__title"><a href="index.html">Send Him to Dagestan</a></h1>
+    <p class="header__description"><strong>Спортивно-туристические «лагеря закалки»</strong> на Кавказе — горы, борьба, команда и характер.
+        Всё <em class="em">добровольно</em>, по согласию родителей и с приоритетом безопасности.</p>
+
+    <nav class="nav" aria-label="Основная навигация">
+        <div class="nav__links">
+            <a class="nav__link" href="programs.html">Программы</a>
+            <a class="nav__link" href="how-it-works.html">Как это работает</a>
+            <a class="nav__link" href="apply.html">Заявка</a>
+            <a class="nav__link" href="about.html">О нас</a>
+            <a class="nav__link" href="contacts.html">Контакты</a>
+            <a class="nav__link" href="feedback.html">Отзывы</a>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="section" id="apply" aria-labelledby="apply-title">
+        <h2 id="apply-title">Подать заявку</h2>
+
+
+            <p class="image-caption">Начните свое путешествие - заполните заявку онлайн</p>
+
+        <form class="form">
+            <fieldset class="fieldset">
+                <legend class="legend">Контактные данные</legend>
+                <div class="form__group">
+                    <label class="label">Имя: <input class="input" name="name" required></label>
+                </div>
+                <div class="form__group">
+                    <label class="label">Телефон: <input class="input" name="phone" type="tel" required></label>
+                </div>
+                <div class="form__group">
+                    <label class="label">Email: <input class="input" name="email" type="email"></label>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <legend class="legend">Выбор направления</legend>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="track" value="trekking">
+                        Горный треккинг
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="track" value="wrestling">
+                        Борьба и ОФП
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="track" value="media">
+                        Медиашкола
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <legend class="legend">Дополнительно</legend>
+                <div class="form__group">
+                    <label class="label">Комментарий:</label>
+                    <textarea class="textarea" name="comment" rows="4" placeholder="Опыт, пожелания, вопросы"></textarea>
+                </div>
+            </fieldset>
+
+            <button class="button" type="submit">Отправить заявку</button>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <p class="footer__text">&copy; 2025 Send Him to Dagestan.</p>
+</footer>
+</body>
+</html>
