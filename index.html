@@ -4,10 +4,8 @@
     <title>Send Him to Dagestan — главная</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Сервис записи подростков в спортивно-туристические лагеря на Кавказе: горные походы, борьба, дисциплина, безопасность, наставники.">
-    <meta name="keywords" content="лагерь, Кавказ, Дагестан, спорт, борьба, горы, туризм, дисциплина, подростки, наставники">
+    <meta name="description" content="Сервис записи подростков в спортивно-туристические лагеря на Кавказе.">
     <link rel="stylesheet" href="style.css">
-    <script src="js/main.js" defer></script>
 </head>
 <body>
 <header class="header">
@@ -15,16 +13,17 @@
     <p class="header__description"><strong>Спортивно-туристические «лагеря закалки»</strong> на Кавказе — горы, борьба, команда и характер.
         Всё <em class="em">добровольно</em>, по согласию родителей и с приоритетом безопасности.</p>
 
-    <nav class="nav" aria-label="Основная навигация">
-        <div class="nav__links">
-            <a class="nav__link" href="programs.html">Программы</a>
-            <a class="nav__link" href="how-it-works.html">Как это работает</a>
-            <a class="nav__link" href="apply.html">Заявка</a>
-            <a class="nav__link" href="about.html">О нас</a>
-            <a class="nav__link" href="contacts.html">Контакты</a>
-            <a class="nav__link" href="feedback.html">Отзывы</a>
-        </div>
+    </div>
+    <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="programs.html" class="nav__link">Программы</a>
+        <a href="how-it-works.html" class="nav__link">Как это работает</a>
+        <a href="about.html" class="nav__link">О нас</a>
+        <a href="feedback.html" class="nav__link">Отзывы</a>
+        <a href="apply.html" class="nav__link">Подать заявку</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
     </nav>
+    </div>
 </header>
 
 <main class="main">
@@ -45,6 +44,7 @@
 
         <p>Начните с раздела <a href="how-it-works.html">«Как это работает»</a> или сразу оставьте <a href="apply.html">заявку</a>.</p>
     </section>
+
     <section class="section">
         <div class="ad-banner">
             <p>Специальное предложение: скидка 15% при ранней записи!</p>
@@ -71,7 +71,12 @@
 </main>
 
 <footer class="footer">
-    <p class="footer__text">&copy; 2025 Send Him to Dagestan.</p>
+    <div class="container">
+        <p class="footer__text">&copy; 2025 Send Him to Dagestan.</p>
+        <div id="footer-stats"></div>
+    </div>
 </footer>
+
+<script type="module" src="js/apps/common-app.js"></script>
 </body>
 </html>

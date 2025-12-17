@@ -1,86 +1,74 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Заявка — Send Him to Dagestan</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Форма заявки на участие в программах.">
-    <meta name="keywords" content="заявка, форма, участие">
+    <title>Подать заявку – Дагестан Туризм</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="js/main.js" defer></script>
 </head>
 <body>
 <header class="header">
     <h1 class="header__title"><a href="index.html">Send Him to Dagestan</a></h1>
-    <p class="header__description"><strong>Спортивно-туристические «лагеря закалки»</strong> на Кавказе — горы, борьба, команда и характер.
-        Всё <em class="em">добровольно</em>, по согласию родителей и с приоритетом безопасности.</p>
+    <p class="header__description"><strong>Спортивно-туристические «лагеря закалки»</strong> на Кавказе.</p>
 
-    <nav class="nav" aria-label="Основная навигация">
-        <div class="nav__links">
-            <a class="nav__link" href="programs.html">Программы</a>
-            <a class="nav__link" href="how-it-works.html">Как это работает</a>
-            <a class="nav__link" href="apply.html">Заявка</a>
-            <a class="nav__link" href="about.html">О нас</a>
-            <a class="nav__link" href="contacts.html">Контакты</a>
-            <a class="nav__link" href="feedback.html">Отзывы</a>
-        </div>
+    </div>
+    <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="programs.html" class="nav__link">Программы</a>
+        <a href="how-it-works.html" class="nav__link">Как это работает</a>
+        <a href="about.html" class="nav__link">О нас</a>
+        <a href="feedback.html" class="nav__link">Отзывы</a>
+        <a href="apply.html" class="nav__link">Подать заявку</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
     </nav>
+    </div>
 </header>
 
 <main class="main">
-    <section class="section" id="apply" aria-labelledby="apply-title">
-        <h2 id="apply-title">Подать заявку</h2>
+    <div class="container">
+        <h1 class="page-title">Подать заявку</h1>
+        <p>
+            Заполните форму ниже, чтобы принять участие в программах проекта. Координатор свяжется с вами по указанным
+            контактам и расскажет о дальнейших шагах.
+        </p>
 
-
-            <p class="image-caption">Начните свое путешествие - заполните заявку онлайн</p>
-
-        <form class="form">
-            <fieldset class="fieldset">
-                <legend class="legend">Контактные данные</legend>
-                <div class="form__group">
-                    <label class="label">Имя: <input class="input" name="name" required></label>
-                </div>
-                <div class="form__group">
-                    <label class="label">Телефон: <input class="input" name="phone" type="tel" required></label>
-                </div>
-                <div class="form__group">
-                    <label class="label">Email: <input class="input" name="email" type="email"></label>
-                </div>
-            </fieldset>
-
-            <fieldset class="fieldset">
-                <legend class="legend">Выбор направления</legend>
-                <div class="radio-group">
-                    <label class="radio-label">
-                        <input type="radio" name="track" value="trekking">
-                        Горный треккинг
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="track" value="wrestling">
-                        Борьба и ОФП
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="track" value="media">
-                        Медиашкола
-                    </label>
-                </div>
-            </fieldset>
-
-            <fieldset class="fieldset">
-                <legend class="legend">Дополнительно</legend>
-                <div class="form__group">
-                    <label class="label">Комментарий:</label>
-                    <textarea class="textarea" name="comment" rows="4" placeholder="Опыт, пожелания, вопросы"></textarea>
-                </div>
-            </fieldset>
-
-            <button class="button" type="submit">Отправить заявку</button>
+        <form class="form apply-form" id="apply-form">
+            <div class="form-group">
+                <label for="full-name">ФИО *</label>
+                <input type="text" id="full-name" name="full-name" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="apply-email">Email *</label>
+                <input type="email" id="apply-email" name="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="apply-phone">Телефон *</label>
+                <input type="tel" id="apply-phone" name="phone" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="apply-program">Выбранная программа</label>
+                <select id="apply-program" name="program" class="form-select">
+                    <option value="trekking">Горный треккинг</option>
+                    <option value="wrestling">Борьба и ОФП</option>
+                    <option value="media">Медиашкола</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="apply-comment">Кратко о себе</label>
+                <textarea id="apply-comment" name="comment" rows="4" class="form-input"></textarea>
+            </div>
+            <button type="submit" class="btn">Отправить заявку</button>
         </form>
-    </section>
+    </div>
 </main>
 
 <footer class="footer">
-    <p class="footer__text">&copy; 2025 Send Him to Dagestan.</p>
+    <div class="container footer__container">
+        <p class="footer__copy">&copy; 2025 Дагестан Туризм. Все права защищены.</p>
+        <div id="footer-stats"></div>
+    </div>
 </footer>
+
+<script type="module" src="js/apps/common-app.js"></script>
 </body>
 </html>

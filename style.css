@@ -20,16 +20,21 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url('images/4.jpg') center/cover fixed no-repeat;
-    letter-spacing: 0.3px;
-    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-color);
 }
 
+.main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -134,12 +139,6 @@ a:hover {
 .nav__link:hover {
     background-color: rgba(255, 255, 255, 0.2);
     text-decoration: none;
-}
-
-.main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1.5rem;
 }
 
 .section {
@@ -680,6 +679,131 @@ a, button, input, .gallery-item, .nav__link {
     margin-bottom: 1rem;
     color: var(--gray-color);
 }
+
+
+#feedback-app, #programs-app {
+    margin-top: 2rem;
+}
+
+.feedback-item, .program-card {
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    border: 1px solid #e0e0e0;
+}
+
+.feedback-item {
+    border-left: 4px solid var(--secondary-color);
+}
+
+.feedback-section, .api-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 2rem;
+    border: 1px solid #e0e0e0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.form-input, .form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(36, 103, 68, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.programs-table-wrapper {
+    overflow-x: auto;
+    background: white;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.vue-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.vue-table th, .vue-table td {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.vue-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.vue-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.program-image-container {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.program-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.program-caption {
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
 
 @media (max-width: 768px) {
     .feedback-header {
