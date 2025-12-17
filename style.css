@@ -598,6 +598,89 @@ a, button, input, .gallery-item, .nav__link {
     font-size: 0.9rem;
 }
 
+.loader {
+    text-align: center;
+    padding: 2rem;
+    color: var(--gray-color);
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--light-color);
+    border-top: 5px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.api-comment-item {
+    background: var(--light-color);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--secondary-color);
+    box-shadow: var(--box-shadow);
+}
+
+.api-comment-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.api-comment-email {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.api-comment-body {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.api-comment-id {
+    font-size: 0.8rem;
+    color: var(--gray-color);
+    text-align: right;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #f5c6cb;
+    text-align: center;
+}
+
+.error-message h4 {
+    color: #721c24;
+    margin-bottom: 1rem;
+}
+
+#api-controls {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+#api-controls p {
+    margin-bottom: 1rem;
+    color: var(--gray-color);
+}
+
 @media (max-width: 768px) {
     .feedback-header {
         flex-direction: column;

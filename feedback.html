@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="js/feedback.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script src="js/api.js" defer></script>
 
 </head>
 <body>
@@ -94,6 +95,29 @@
                     <button class="button button--small edit-btn">Редактировать</button>
                     <button class="button button--small delete-btn">Удалить</button>
                 </div>
+            </div>
+        </template>
+    </section>
+
+    <section class="section">
+        <h3>Комментарии из внешнего API</h3>
+        <p>Демонстрация работы с внешним API (JSONPlaceholder). Загружаем реальные данные с сервера.</p>
+
+        <div id="api-controls">
+            <p>Нажмите кнопку, чтобы загрузить комментарии с внешнего API. Каждый раз будут загружаться комментарии к случайному посту.</p>
+            <button id="load-api-comments" class="button">Загрузить из API</button>
+        </div>
+
+        <div id="api-comments-container">
+            <p class="article">Нажмите кнопку выше, чтобы загрузить комментарии.</p>
+        </div>
+
+        <template id="api-comment-template">
+            <div class="api-comment-item">
+                <h4 class="api-comment-name"></h4>
+                <span class="api-comment-email"></span>
+                <p class="api-comment-body"></p>
+                <div class="api-comment-id"></div>
             </div>
         </template>
     </section>
